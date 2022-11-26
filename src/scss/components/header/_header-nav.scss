@@ -1,0 +1,20 @@
+.header__nav {
+	display: none;
+	@media (min-width: $point1) {
+		display: flex;
+		justify-content: space-between;
+		min-width: 62%;
+		&-item {
+			text-decoration: none;
+			font-size: 1.8rem;
+		}
+		&-item:hover {
+			color: $color1;
+			text-shadow: $color1 0 0 0.5rem;
+		}
+		&-item:active {
+			color: $color3;
+			text-shadow: none;
+		}
+	}
+}

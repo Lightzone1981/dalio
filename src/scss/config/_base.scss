@@ -1,10 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 @import "../variables/colors";
+@import "../variables/stop-points";
 
-html{
-    font-size: 10px;
-    color:$color1;
+html {
+	font-size: 10px;
+	font-family: inter;
 }
-body{
-    background-color: $color2;
+
+* {
+	color: #fff;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	background: linear-gradient(to right, #0a1530 0%, #0a142f 100%);
+
 }

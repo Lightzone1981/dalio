@@ -1,0 +1,71 @@
+$burger-size: 2.6rem;
+$burger-color:#fff;
+%stripe {
+	content: "";
+	position: absolute;
+	left: 10%;
+	width: 80%;
+	height: 10%;
+	background-color: $burger-color;
+	transition: 0.5s;
+}
+%size {
+	width: $burger-size;
+	height: $burger-size;
+}
+
+.header__burger {
+	position: relative;
+	@extend %size;
+}
+.header__burger-checkbox {
+	visibility: hidden;
+}
+.header__burger-label {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 10;
+	@extend %size;
+
+	&::before,
+	&::after {
+		top: 70%;
+		@extend %stripe;
+	}
+	&::after {
+		top: 20%;
+	}
+	&:hover {
+        cursor: pointer;
+	}
+}
+
+.header__burger-pseudo {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 5;
+	@extend %size;
+
+	&::before {
+		@extend %stripe;
+		top: 45%;
+	}
+}
+
+.header__burger-checkbox:checked {
+	~ .header__burger-label::after {
+		transform: rotate(45deg);
+		top: 45%;
+	}
+
+	~ .header__burger-label::before {
+		transform: rotate(-45deg);
+		top: 45%;
+	}
+
+	~ .header__burger-pseudo::before {
+		opacity: 0;
+	}
+}

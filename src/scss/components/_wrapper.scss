@@ -1,0 +1,8 @@
+.wrapper {
+	flex: 1;
+	min-height: 100vh;
+	background: url("../../assets/decor/ornament_sm.png") no-repeat;
+	@media (min-width: $point1) {
+		background: url("../../assets/decor/ornament_lg.png") no-repeat;
+	}
+}
