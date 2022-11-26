@@ -1,3 +1,5 @@
-body{
-	color:rgb(77, 34, 184);
-}
+@import "./config/reset";
+@import "./config/normalize";
+@import "./config/base";
+@import "./components/main-container"
+
