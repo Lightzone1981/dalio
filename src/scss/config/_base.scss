@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 @import "../variables/colors";
 @import "../variables/stop-points";
+@import "../mixins/position-style";
+
 
 html {
 	font-size: 10px;
@@ -14,6 +16,10 @@ html {
 body {
 	display: flex;
 	flex-direction: column;
-	background: linear-gradient(to right, #0a1530 0%, #0a142f 100%);
+    background-color: $color2;
+	// background: url("../../assets/decor/color-shadow.png") center no-repeat, $color2;
+    // background-size: contain;
 
 }
+
+

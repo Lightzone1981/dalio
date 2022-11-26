@@ -1,0 +1,25 @@
+.color-shadow-1::before{
+    @include position-style(-50%, -25%, 100%, 100%);
+    opacity: 0.7;
+    background:  radial-gradient(circle at center, #312176 0%,$color2 40%, $color2 100%);
+}
+
+@media (min-width: $point1) {
+.color-shadow-1::before{
+    @include position-style(-35%, -25%, 70%, 70%);
+}
+.color-shadow-1::after{
+    @include position-style(-35%, 50%, 80%, 80%);
+    opacity: 0.7;
+    background:  radial-gradient(circle at center, #3A1957 0%,$color2 40%, $color2 100%);
+}
+.color-shadow-2::before{
+    @include position-style(55%, -25%, 70%, 70%);
+    background:  radial-gradient(circle at center, #182E57 0%,$color2 40%, $color2 100%);
+}
+.color-shadow-2::after{
+    @include position-style(55%, 50%, 80%, 80%);
+    opacity: 0.5;
+    background:  radial-gradient(circle at center, #352D44 0%,$color2 40%, $color2 100%);
+}
+}

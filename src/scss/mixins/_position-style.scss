@@ -1,0 +1,9 @@
+@mixin position-style($t, $l, $w, $h) {
+	position: absolute;
+	z-index: -1;
+	content: "";
+	top: $t;
+	left: $l;
+	width: $w;
+	height: $h;
+}
