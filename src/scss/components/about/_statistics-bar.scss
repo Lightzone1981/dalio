@@ -1,14 +1,27 @@
 .statistics-bar {
-
+    flex-basis: 100%;
+    
     &__container {
-    }
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
 
-    &__item {
-    }
+        @media (min-width: $point1) {
+        flex-direction: row;
+        }
 
-    &__item-num {
-    }
-
-    &__item-text {
+        .statistics-bar__item {
+            text-align: center;
+            padding:3rem 0;
+            .statistics-bar__item-num {
+                font-size: 4.8rem;
+                font-weight: bold;
+    
+                &__item-text {
+                    font-size: 2rem;
+                }
+            }
+        }
     }
 }
