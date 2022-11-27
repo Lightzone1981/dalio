@@ -968,18 +968,36 @@ body {
 }
 
 .collage {
-  -o-object-fit: contain;
-     object-fit: contain;
+  position: relative;
+  width: 90%;
 }
 @media (min-width: 768px) {
   .collage {
     width: 50%;
   }
 }
+.collage__img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.collage::after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  top: 80%;
+  left: 80%;
+  width: 30%;
+  height: 30%;
+  z-index: -1;
+  background: url("../../assets/decor/circle_bg.png") center no-repeat;
+  background-size: contain;
+}
 
 .statistics-bar {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  padding: 3rem 0;
 }
 .statistics-bar__container {
   list-style-type: none;
@@ -1030,6 +1048,9 @@ body {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1042,7 +1063,7 @@ body {
 }
 @media (min-width: 768px) {
   .about__container {
-    width: 45%;
+    width: 47%;
   }
 }
 .about__container .about__title {

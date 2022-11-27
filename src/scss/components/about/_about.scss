@@ -8,6 +8,7 @@
 	@media (min-width: $point1) {
 		flex-direction: row;
 		flex-wrap: wrap;
+		justify-content: space-between;
 		align-items: center;
 		gap: 2rem;
 	}
@@ -17,7 +18,7 @@
 		padding-bottom: 2rem;
 
 		@media (min-width: $point1) {
-			width: 45%;
+			width: 47%;
 		}
 
 		.about__title {
