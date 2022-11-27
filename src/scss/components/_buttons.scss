@@ -1,0 +1,14 @@
+.main-button {
+	background-color: $color1;
+	color: $color2;
+	font-size: 2.5rem;
+	font-weight: 500;
+	padding: 0.8em 2em;
+	border-radius: 1.9em;
+}
+
+.main-button--baner {
+	@media (min-width: $point1) {
+        font-size: 1.8vw;
+    }
+}

@@ -66,6 +66,6 @@ $burger-color:#fff;
 	}
 
 	~ .header__burger-pseudo::before {
-		opacity: 0;
+		display: none;
 	}
 }

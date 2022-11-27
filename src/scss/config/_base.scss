@@ -2,6 +2,7 @@
 @import "../variables/colors";
 @import "../variables/stop-points";
 @import "../mixins/position-style";
+@import "../components/buttons";
 
 
 html {
@@ -16,10 +17,10 @@ html {
 body {
 	display: flex;
 	flex-direction: column;
-    background-color: $color2;
-	// background: url("../../assets/decor/color-shadow.png") center no-repeat, $color2;
-    // background-size: contain;
+    background-color: $color5;
 
 }
+
+
 
 
