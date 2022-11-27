@@ -1,2 +1,2 @@
 dalio_project
-https://lightzone1981.github.io/dalio/
+https://lightzone1981.github.io/dalio/public
