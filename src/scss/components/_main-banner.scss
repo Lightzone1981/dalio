@@ -1,7 +1,7 @@
 .main-banner {
 	text-align: center;
 
-	&__title {
+	.main-banner__title {
 		position: relative;
 		left: 0.5em;
 		display: inline-block;
@@ -13,166 +13,198 @@
 			font-size: 10vw;
 			left: 0;
 		}
-	}
 
-	&__title::before {
-		@include position-style(-0.3em, -1.4em, 2em, 2em);
-		background: url("../../assets/decor/world_class.svg") center no-repeat;
-		background-size: contain;
-	}
-
-	&__title::after {
-		@include position-style(0.1em, -2.65em, 8em, 6em);
-		background: url("../../assets/decor/line-sm.svg") center no-repeat;
-		background-size: contain;
-		@media (min-width: $point1) {
-			@include position-style(0.1em, -0.94em, 10em, 5em);
-			background: url("../../assets/decor/line-lg.svg") center no-repeat;
+		&::before {
+			@include position-style(-0.3em, -1.4em, 2em, 2em);
+			background: url("../../assets/decor/world_class.svg") center no-repeat;
 			background-size: contain;
+		}
+
+		&::after {
+			@include position-style(0.1em, -2.65em, 8em, 6em);
+			background: url("../../assets/decor/line-sm.svg") center no-repeat;
+			background-size: contain;
+			@media (min-width: $point1) {
+				@include position-style(0.1em, -0.94em, 10em, 5em);
+				background: url("../../assets/decor/line-lg.svg") center no-repeat;
+				background-size: contain;
+			}
 		}
 	}
 
-	&__title2 {
+	.main-banner__title2 {
 		position: relative;
 		left: -0.7em;
-	}
 
-	&__title2::before {
-		@include position-style(-1.7em, 3.6em, 0.4em, 0.4em);
-		background: url("../../assets/decor/star_bgr.svg") center no-repeat;
-		background-size: contain;
-		@media (min-width: $point2) {
-			top: -1.7em;
-			left: 5em;
-		}
-	}
-	&__title2::after {
-		@include position-style(3.2em, 3.3em, 0.4em, 0.4em);
-		background: url("../../assets/decor/star_bgr.svg") center no-repeat;
-		background-size: contain;
-		@media (min-width: $point1) {
-			@include position-style(-0.8em, -0.7em, 0.4em, 0.4em);
-		}
-	}
-
-	&__container {
-		display: flex;
-		flex-direction: column;
-	}
-	&__text-container {
-		position: relative;
-		left: -1vw;
-		align-self: center;
-		display: flex;
-		flex-direction: column;
-		align-items: baseline;
-		padding-bottom: 5vw;
-		@media (min-width: $point1) {
-			left: -7.5vw;
-		}
-	}
-	&__subtitle {
-		font-size: 4.5vw;
-		line-height: 1.5em;
-		font-weight: normal;
-		width: 70vw;
-		text-align: left;
-		margin: 0 auto;
-		padding-bottom: 1em;
-		@media (min-width: $point1) {
-			font-size: 1.8vw;
-			width: 35vw;
-		}
-
-	}
-
-	&__figure-big {
-		position: relative;
-		margin: 3rem auto;
-		display: inline-block;
-		@media (min-width: $point1) {
-			position:absolute;
-			top:23vw;	
-			right: 7%;
-		}
-
-		.main-banner__img-big {
-			width: 85vw;
-			@media (min-width: $point1) {
-				width: 30vw;
-			}
-
-		}
-		.main-banner__play-video {
-			position: absolute;
-			right: 15%;
-			bottom: -13%;
-			width: 25vw;
-			height: 25vw;
-			border-radius: 50%;
-			background: url(../../assets/buttons/play_video.svg) center no-repeat,
-			linear-gradient(to bottom, #f0e9cd 7%, #939498 100%);
+		&::before {
+			@include position-style(-1.7em, 3.6em, 0.4em, 0.4em);
+			background: url("../../assets/decor/star_bgr.svg") center no-repeat;
 			background-size: contain;
-			transition: 0.3s;
-			@media (min-width: $point1) {
-				width: 10vw;
-				height: 10vw;
-				bottom: -15%;
+
+			@media (min-width: $point2) {
+				top: -1.7em;
+				left: 5em;
 			}
-			&:hover {
-				cursor: pointer;
-				transform: scale(1.1);
-				transition: 0.3s;
-				filter: brightness(1.1);
+		}
+		&::after {
+			@include position-style(3.2em, 3.3em, 0.4em, 0.4em);
+			background: url("../../assets/decor/star_bgr.svg") center no-repeat;
+			background-size: contain;
+
+			@media (min-width: $point1) {
+				@include position-style(-0.8em, -0.7em, 0.4em, 0.4em);
 			}
 		}
 	}
-	.main-banner__figure-small{
-		position: relative;
+
+	.main-banner__container {
 		display: flex;
+		flex-direction: column;
 
-		@media (min-width: $point1) {
-			position: absolute;
-			width: 20vw;
-			top:45vw;
-			left: 2%;
-		}
-		@media (min-width: $point2) {
-			top:42vw;
-		}
+		.main-banner__text-container {
+			position: relative;
+			left: -1vw;
+			align-self: center;
+			display: flex;
+			flex-direction: column;
+			align-items: baseline;
+			padding-bottom: 5vw;
 
-		.main-banner__decor{
-			&::before{
-				@include position-style(65%, 25%, 25vw, 25vw);
-				z-index: -1;
-				background: url("../../assets/decor/circle_bg.png") center no-repeat;
-				background-size: contain;
-				// opacity: 0.8;
+			@media (min-width: $point1) {
+				left: -7.5vw;
+			}
+
+			.main-banner__subtitle {
+				font-size: 4.5vw;
+				line-height: 1.5em;
+				font-weight: normal;
+				width: 70vw;
+				text-align: left;
+				margin: 0 auto;
+				padding-bottom: 1em;
+
 				@media (min-width: $point1) {
-					width: 15vw;
-					height: 15vw;
-					left: 45%;
+					font-size: 1.8vw;
+					width: 35vw;
 				}
 			}
-			// &::after{
-			// 	@include position-style(65%, 85%, 25vw, 25vw);
-			// 	z-index: 5;
-			// 	background: url("../../assets/decor/circle-1_bg.svg") center no-repeat;
-			// 	background-size: contain;
-			// }
 		}
 
-		.main-banner__img-small{
-			align-self: baseline;
-			width: 45%;
+		.main-banner__figure-big {
+			position: relative;
+			margin: 3rem auto;
+			display: inline-block;
 
-			
 			@media (min-width: $point1) {
-				width: 100%;
+				position: absolute;
+				top: 23vw;
+				right: 7%;
+			}
+
+			.main-banner__img-big {
+				width: 85vw;
+				@media (min-width: $point1) {
+					width: 30vw;
+				}
+			}
+
+			.main-banner__play-video {
+				position: absolute;
+				right: 15%;
+				bottom: -13%;
+				width: 25vw;
+				height: 25vw;
+				border-radius: 50%;
+				background: url(../../assets/buttons/play_video.svg) center no-repeat,
+					linear-gradient(to bottom, #f0e9cd 7%, #939498 100%);
+				background-size: contain;
+				transition: 0.3s;
+
+				@media (min-width: $point1) {
+					width: 10vw;
+					height: 10vw;
+					bottom: -15%;
+				}
+
+				&:hover {
+					cursor: pointer;
+					transform: scale(1.1);
+					transition: 0.3s;
+					filter: brightness(1.1);
+				}
+			}
+		}
+
+		.main-banner__figure-small {
+			position: relative;
+			display: flex;
+
+			@media (min-width: $point1) {
+				position: absolute;
+				width: 20vw;
+				top: 45vw;
+				left: 2%;
 			}
 			@media (min-width: $point2) {
+				top: 42vw;
 			}
-			
+
+			.main-banner__decor {
+				
+					&::before {
+						@include position-style(5%, 32%, 25vw, 25vw);
+						z-index: 5;
+						background: url("../../assets/decor/dots_bgr.svg") center no-repeat;
+						background-size: contain;
+	
+						@media (min-width: $point1) {
+							@include position-style(80%, 450%, 12vw, 12vw);
+							background: url("../../assets/decor/circle_bg.png") center no-repeat;
+							background-size: contain;
+							opacity: 0.2;
+
+						}
+					}
+
+				&::after {
+					@include position-style(70%, 27%, 25vw, 25vw);
+					z-index: -1;
+					background: url("../../assets/decor/circle_bg.png") center no-repeat;
+					background-size: contain;
+
+					@media (min-width: $point1) {
+						width: 12vw;
+						height: 12vw;
+						left: 55%;
+					}
+				}
+			}
+
+			.main-banner__img-small {
+				align-self: baseline;
+				width: 45%;
+				padding-top: 4rem;
+
+				@media (min-width: $point1) {
+					width: 100%;
+				}
+
+				@media (min-width: $point2) {
+				}
+				&::after{
+					@include position-style(35%, 90%, 25vw, 25vw);
+					z-index: 5;
+					background: url("../../assets/decor/circle_bg.png") center no-repeat;
+					background-size: contain;
+					opacity: 0.1;
+
+					@media (min-width: $point1) {
+						width: 15vw;
+						height: 15vw;
+						left: 320%;
+					}
+				}
+			}
 		}
 	}
 }

@@ -1,25 +1,48 @@
-.color-shadow-1::before{
-    @include position-style(-50%, -25%, 100%, 100%);
-    opacity: 0.7;
-    background:  radial-gradient(circle at center, #312176 0%,$color5 40%, $color5 100%);
+.color-shadow-1::before {
+	@include position-style(-100vw, -95vw, 200vw, 200vw);
+	background: radial-gradient(
+		circle at center,
+		#312176 0%,
+		transparent 40%,
+		transparent 100%
+	);
 }
 
 @media (min-width: $point1) {
-.color-shadow-1::before{
-    @include position-style(-35%, -25%, 70%, 70%);
-}
-.color-shadow-1::after{
-    @include position-style(-35%, 50%, 80%, 80%);
-    opacity: 0.7;
-    background:  radial-gradient(circle at center, #3A1957 0%,$color5 40%, $color5 100%);
-}
-.color-shadow-2::before{
-    @include position-style(55%, -25%, 70%, 70%);
-    background:  radial-gradient(circle at center, #182E57 0%,$color5 40%, $color5 100%);
-}
-.color-shadow-2::after{
-    @include position-style(55%, 50%, 80%, 80%);
-    opacity: 0.5;
-    background:  radial-gradient(circle at center, #352D44 0%,$color5 40%, $color5 100%);
-}
+	.color-shadow-1::before {
+		@include position-style(-50vw, -45vw, 100vw, 100vw);
+	}
+
+	.color-shadow-1::after {
+		@include position-style(-40%, 10%, 200rem, 200rem);
+		border-radius: 50%;
+		background: radial-gradient(
+			circle at center,
+			#411b61 0%,
+			transparent 50%,
+			transparent 100%
+		);
+	}
+
+	.color-shadow-2::before {
+		@include position-style(45vw, -20vw, 80rem, 80rem);
+		border-radius: 50%;
+		background: radial-gradient(
+			circle at center,
+			#182e57 0%,
+			transparent 40%,
+			transparent 100%
+		);
+	}
+
+	.color-shadow-2::after {
+		@include position-style(35vw, 55vw, 100rem, 100rem);
+		border-radius: 50%;
+		background: radial-gradient(
+			circle at center,
+			#2c303e 0%,
+			transparent 30%,
+			transparent 100%
+		);
+	}
 }
