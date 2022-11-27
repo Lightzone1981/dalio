@@ -6,6 +6,9 @@
 	padding: 0.8em 2em;
 	border-radius: 1.9em;
 	transition: 0.1s;
+	&::before{
+		
+	}
 
 	&:hover {
 		cursor: pointer;
