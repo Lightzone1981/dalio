@@ -1,5 +1,11 @@
 .main-banner {
 	text-align: center;
+	padding-bottom: 15vw;
+
+	@media (min-width: $point1) {
+		padding-bottom: 25vw;
+
+	}
 
 	.main-banner__title {
 		position: relative;

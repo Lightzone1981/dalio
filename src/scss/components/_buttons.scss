@@ -1,19 +1,21 @@
 .main-button {
 	background-color: $color1;
 	color: $color2;
-	font-size: 2.5rem;
+	font-size: 1.8rem;
 	font-weight: 500;
 	padding: 0.8em 2em;
 	border-radius: 1.9em;
 	transition: 0.1s;
-	&::before{
-		
-	}
 
 	&:hover {
 		cursor: pointer;
 		scale: 1.05;
 		transition: 0.1s;
+	}
+	&__icon{
+		color: $color2;
+		font-size: 0.8em;
+		padding-left: 0.5em;
 	}
 
 	&--baner {
