@@ -1,19 +1,19 @@
 .collage {
-    position: relative;
-    width: 90%;
+	position: relative;
+	width: 90%;
 
-    @media (min-width: $point1) {
-        width: 50%;
-    }
-    
-    &__img {
-        width: 100%;
-    }
+	@media (min-width: $point1) {
+		width: 50%;
+	}
 
-    &::after {
-        @include position-style(80%, 80%, 30%, 30%);
-        z-index: -1;
-        background: url("../../assets/decor/circle_bg.png") center no-repeat;
-        background-size: contain;
-    }
+	&__img {
+		width: 100%;
+	}
+
+	&::after {
+		@include position-style(80%, 80%, 30%, 30%);
+		z-index: -1;
+		background: url("../../assets/decor/circle_bg.png") center no-repeat;
+		background-size: contain;
+	}
 }

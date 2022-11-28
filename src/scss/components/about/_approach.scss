@@ -2,64 +2,78 @@
 	margin: 0 auto;
 	padding: 5rem 2rem;
 	width: 100vw;
-    background: linear-gradient(to top, #FFC93E 0%, #FFC93E 35%, transparent 35%, transparent 100%);;
+	background: linear-gradient(
+		to top,
+		#ffc93e 0%,
+		#ffc93e 35%,
+		transparent 35%,
+		transparent 100%
+	);
 
 	@media (min-width: $point1) {
-	    padding: 10rem 2.4rem;
+		padding: 10rem 2.4rem;
 
-        background: linear-gradient(left, #FFC93E 0%, #FFC93E 35%, #353F5B 35%, #353F5B 100%);;
+		background: linear-gradient(
+			left,
+			#ffc93e 0%,
+			#ffc93e 35%,
+			#353f5b 35%,
+			#353f5b 100%
+		);
 	}
 }
 
 .approach {
 	display: flex;
 	flex-direction: column;
-    padding-bottom: 10rem;
+	padding-bottom: 10rem;
 	@media (min-width: $point1) {
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
 	}
 
-    .approach__figure{
-        position: relative;
-        z-index: 2;
+	.approach__figure {
+		position: relative;
+		z-index: 2;
 		order: 1;
-        width: 90%;
-        align-self: center;
-        @media (min-width: $point1) {
-            order: 0;
-            width: 45%;
-        }
-        .approach__figure-container{
-            &::before{
-                @include position-style(80%, 0, 30%, 30%);
-                background: url("../../assets/decor/dots-corner_bgr.svg") center/contain no-repeat;
-              
-                @media (min-width: $point1) {
-                    top: 77%;
-                    left: -12%;
-                }
-            }
+		width: 90%;
+		align-self: center;
+		@media (min-width: $point1) {
+			order: 0;
+			width: 45%;
+		}
+		.approach__figure-container {
+			&::before {
+				@include position-style(80%, 0, 30%, 30%);
+				background: url("../../assets/decor/dots-corner_bgr.svg") center/contain
+					no-repeat;
 
-            &::after{
-                @include position-style(5%, 85%, 30%, 30%);
-				background: url("../../assets/decor/circle_bg.png") center/contain no-repeat;
-                z-index:-1;
-               
-                @media (min-width: $point1) {
-                @include position-style(-10%, 80%, 25%, 25%);
-                }
-            }
+				@media (min-width: $point1) {
+					top: 77%;
+					left: -12%;
+				}
+			}
 
-            .approach__figure-img {
-                width: 100%;
-            }
-        }
-    }
+			&::after {
+				@include position-style(5%, 85%, 30%, 30%);
+				background: url("../../assets/decor/circle_bg.png") center/contain
+					no-repeat;
+				z-index: -1;
+
+				@media (min-width: $point1) {
+					@include position-style(-10%, 80%, 25%, 25%);
+				}
+			}
+
+			.approach__figure-img {
+				width: 100%;
+			}
+		}
+	}
 
 	.approach__content {
-        width: 90%;
+		width: 90%;
 		@media (min-width: $point1) {
 			order: 0;
 			width: 45%;
@@ -97,11 +111,11 @@
 						position: absolute;
 						top: 0.15em;
 						left: -2em;
-                        color: $color1;
+						color: $color1;
 
-                        @media (min-width: $point1) {
-                            color: #fff;
-                        }
+						@media (min-width: $point1) {
+							color: #fff;
+						}
 					}
 				}
 

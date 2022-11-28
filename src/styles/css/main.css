@@ -1115,14 +1115,14 @@ h3 {
   margin: 0 auto;
   padding: 5rem 2rem;
   width: 100vw;
-  background: -webkit-gradient(linear, left bottom, left top, from(#FFC93E), color-stop(35%, #FFC93E), color-stop(35%, transparent), to(transparent));
-  background: linear-gradient(to top, #FFC93E 0%, #FFC93E 35%, transparent 35%, transparent 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#ffc93e), color-stop(35%, #ffc93e), color-stop(35%, transparent), to(transparent));
+  background: linear-gradient(to top, #ffc93e 0%, #ffc93e 35%, transparent 35%, transparent 100%);
 }
 @media (min-width: 768px) {
   .approach-container {
     padding: 10rem 2.4rem;
-    background: -webkit-gradient(linear, left top, right top, from(#FFC93E), color-stop(35%, #FFC93E), color-stop(35%, #353F5B), to(#353F5B));
-    background: linear-gradient(left, #FFC93E 0%, #FFC93E 35%, #353F5B 35%, #353F5B 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#ffc93e), color-stop(35%, #ffc93e), color-stop(35%, #353f5b), to(#353f5b));
+    background: linear-gradient(left, #ffc93e 0%, #ffc93e 35%, #353f5b 35%, #353f5b 100%);
   }
 }
 
