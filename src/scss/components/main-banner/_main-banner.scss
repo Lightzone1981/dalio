@@ -22,18 +22,15 @@
 
 		&::before {
 			@include position-style(-0.3em, -1.4em, 2em, 2em);
-			background: url("../../assets/decor/world_class.svg") center no-repeat;
-			background-size: contain;
+			background: url("../../assets/decor/world_class.svg") center/contain no-repeat;
 		}
 
 		&::after {
 			@include position-style(0.1em, -2.65em, 8em, 6em);
-			background: url("../../assets/decor/line-sm.svg") center no-repeat;
-			background-size: contain;
+			background: url("../../assets/decor/line-sm.svg") center/contain no-repeat;
 			@media (min-width: $point1) {
 				@include position-style(0.1em, -0.94em, 10em, 5em);
-				background: url("../../assets/decor/line-lg.svg") center no-repeat;
-				background-size: contain;
+				background: url("../../assets/decor/line-lg.svg") center/contain no-repeat;
 			}
 		}
 	}
@@ -44,8 +41,7 @@
 
 		&::before {
 			@include position-style(-1.7em, 3.6em, 0.4em, 0.4em);
-			background: url("../../assets/decor/star_bgr.svg") center no-repeat;
-			background-size: contain;
+			background: url("../../assets/decor/star_bgr.svg") center/contain no-repeat;
 
 			@media (min-width: $point2) {
 				top: -1.7em;
@@ -54,8 +50,7 @@
 		}
 		&::after {
 			@include position-style(3.2em, 3.3em, 0.4em, 0.4em);
-			background: url("../../assets/decor/star_bgr.svg") center no-repeat;
-			background-size: contain;
+			background: url("../../assets/decor/star_bgr.svg") center/contain no-repeat;
 
 			@media (min-width: $point1) {
 				@include position-style(-0.8em, -0.7em, 0.4em, 0.4em);
@@ -121,9 +116,8 @@
 				width: 25vw;
 				height: 25vw;
 				border-radius: 50%;
-				background: url(../../assets/buttons/play_video.svg) center no-repeat,
+				background: url(../../assets/buttons/play_video.svg) center/contain no-repeat,
 					linear-gradient(to bottom, #f0e9cd 7%, #939498 100%);
-				background-size: contain;
 				transition: 0.3s;
 
 				@media (min-width: $point1) {
@@ -160,13 +154,11 @@
 					&::before {
 						@include position-style(5%, 32%, 25vw, 25vw);
 						z-index: 5;
-						background: url("../../assets/decor/dots_bgr.svg") center no-repeat;
-						background-size: contain;
+						background: url("../../assets/decor/dots_bgr.svg") center/contain no-repeat;
 	
 						@media (min-width: $point1) {
 							@include position-style(80%, 450%, 12vw, 12vw);
-							background: url("../../assets/decor/circle_bg.png") center no-repeat;
-							background-size: contain;
+							background: url("../../assets/decor/circle_bg.png") center/contain no-repeat;
 							opacity: 0.2;
 
 						}
@@ -175,8 +167,7 @@
 				&::after {
 					@include position-style(70%, 27%, 25vw, 25vw);
 					z-index: -1;
-					background: url("../../assets/decor/circle_bg.png") center no-repeat;
-					background-size: contain;
+					background: url("../../assets/decor/circle_bg.png") center/contain no-repeat;
 
 					@media (min-width: $point1) {
 						width: 12vw;
@@ -200,8 +191,7 @@
 				&::after{
 					@include position-style(35%, 90%, 25vw, 25vw);
 					z-index: 5;
-					background: url("../../assets/decor/circle_bg.png") center no-repeat;
-					background-size: contain;
+					background: url("../../assets/decor/circle_bg.png") center/contain no-repeat;
 					opacity: 0.1;
 
 					@media (min-width: $point1) {

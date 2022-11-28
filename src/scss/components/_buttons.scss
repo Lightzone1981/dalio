@@ -9,9 +9,13 @@
 
 	&:hover {
 		cursor: pointer;
-		scale: 1.05;
+		background-color: $color3;
 		transition: 0.1s;
 	}
+	&:active {
+		background-color: $color1;
+	}
+
 	&__icon{
 		color: $color2;
 		font-size: 0.8em;
