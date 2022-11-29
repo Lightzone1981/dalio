@@ -1346,6 +1346,31 @@ h3 {
   padding-bottom: 3rem;
 }
 
+.service-slider {
+  position: relative;
+  width: 100%;
+  padding-bottom: 7rem;
+}
+.service-slider .servise-slider__pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.service-slider .servise-slider__pagination .swiper-pagination-bullet {
+  width: 2rem;
+  height: 2rem;
+  font-size: 2rem;
+  background-color: #fff;
+  opacity: 1;
+}
+.service-slider .servise-slider__pagination .swiper-pagination-bullet-active {
+  background-color: #FFC93E;
+}
+
 .service-card {
   background-color: #5A6378;
   border-radius: 3rem;
