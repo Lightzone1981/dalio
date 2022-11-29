@@ -336,11 +336,19 @@ template {
   -webkit-transition: 0.1s;
   transition: 0.1s;
 }
+.main-button .main-button__icon {
+  color: #172048;
+}
 .main-button:hover {
   cursor: pointer;
-  background-color: #5A6378;
+  color: #FFC93E;
+  background-color: transparent;
+  outline: 1px solid #FFC93E;
   -webkit-transition: 0.1s;
   transition: 0.1s;
+}
+.main-button:hover .main-button__icon {
+  color: #FFC93E;
 }
 .main-button:active {
   background-color: #FFC93E;
@@ -356,6 +364,39 @@ template {
   }
 }
 
+.main-button--white {
+  font-weight: 400;
+  background-color: transparent;
+  color: #fff;
+  outline: 1px solid #fff;
+}
+.main-button--white .main-button__icon {
+  color: #fff;
+}
+.main-button--white:hover {
+  font-weight: 500;
+  outline: none;
+  background-color: #FFC93E;
+  color: #172048;
+}
+.main-button--white:hover .main-button__icon {
+  color: #172048;
+}
+
+@media (max-width: 768px) {
+  .see-all-button {
+    background-color: transparent;
+    outline: none;
+    padding: 0;
+  }
+  .see-all-button .main-button__icon {
+    display: none;
+  }
+  .see-all-button:hover {
+    color: #FFC93E;
+    background-color: transparent;
+  }
+}
 .scroll-button {
   display: none;
 }
@@ -427,7 +468,7 @@ h2 {
 
 h3 {
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.25em;
 }
 @media (min-width: 768px) {
@@ -1286,4 +1327,46 @@ h3 {
 
 .about {
   padding-bottom: 3rem;
+}
+
+.service__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.service__title {
+  width: 50%;
+  padding-bottom: 3rem;
+}
+
+.service-card {
+  background-color: #5A6378;
+  border-radius: 3rem;
+  padding: 4.8rem 3.4rem;
+}
+.service-card__icon {
+  font-size: 5rem;
+  color: #FFC93E;
+  padding-bottom: 3.6rem;
+}
+.service-card__title {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+.service-card__text {
+  font-size: 1.6rem;
+  line-height: 3rem;
+  padding-bottom: 2rem;
+}
+
+.service {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
