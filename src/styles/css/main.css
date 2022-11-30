@@ -1,4 +1,82 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@font-face {
+  font-family: "icomoon";
+  src: url("../../scss/icons-font/fonts/icomoon.eot?9i6q3b");
+  src: url("../../scss/icons-font/fonts/icomoon.eot?9i6q3b#iefix") format("embedded-opentype"), url("../../scss/icons-font/fonts/icomoon.ttf?9i6q3b") format("truetype"), url("../../scss/icons-font/fonts/icomoon.woff?9i6q3b") format("woff"), url("../../scss/icons-font/fonts/icomoon.svg?9i6q3b#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-]::before,
+[class*=" icon-"]::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-drawing:before {
+  content: "\e900";
+}
+
+.icon-monitor:before {
+  content: "\e901";
+}
+
+.icon-pencil:before {
+  content: "\e903";
+}
+
+.icon-paper:before {
+  content: "\e904";
+}
+
+.icon-check-mark:before {
+  content: "\e905";
+}
+
+.icon-arrow-left:before {
+  content: "\e902";
+}
+
+.icon-arrow-right-up:before {
+  content: "\e906";
+}
+
+.icon-chevron-right:before {
+  content: "\e90d";
+}
+
+.icon-dribbble:before {
+  content: "\e907";
+}
+
+.icon-facebook:before {
+  content: "\e908";
+}
+
+.icon-github:before {
+  content: "\e909";
+}
+
+.icon-twitter:before {
+  content: "\e90a";
+}
+
+.icon-scroll:before {
+  content: "\e90b";
+}
+
+.icon-star:before {
+  content: "\e90c";
+}
+
 * {
   vertical-align: baseline;
   font-weight: inherit;
@@ -326,6 +404,75 @@ template {
   display: none;
 }
 
+html {
+  font-size: 10px;
+  font-family: inter;
+  scroll-behavior: smooth;
+}
+
+* {
+  color: #fff;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #0E1531;
+}
+
+h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.25em;
+}
+@media (min-width: 768px) {
+  h2 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1024px) {
+  h2 {
+    font-size: 4.8rem;
+  }
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.25em;
+}
+@media (min-width: 768px) {
+  h3 {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1024px) {
+  h3 {
+    font-size: 2.4rem;
+  }
+}
+
+.footer {
+  min-height: 20rem;
+  background-color: #172048;
+}
+
+.main-container {
+  margin: 0 auto;
+  padding: 0 2.4rem;
+  max-width: 100%;
+}
+@media (min-width: 768px) {
+  .main-container {
+    max-width: 114rem;
+  }
+}
+
 .main-button {
   background-color: #FFC93E;
   color: #172048;
@@ -426,153 +573,6 @@ template {
   .scroll-button:hover {
     cursor: pointer;
     opacity: 0.5;
-  }
-}
-
-html {
-  font-size: 10px;
-  font-family: inter;
-  scroll-behavior: smooth;
-}
-
-* {
-  color: #fff;
-}
-
-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: #0E1531;
-}
-
-h2 {
-  font-size: 2.4rem;
-  font-weight: 700;
-  line-height: 1.25em;
-}
-@media (min-width: 768px) {
-  h2 {
-    font-size: 3rem;
-  }
-}
-@media (min-width: 1024px) {
-  h2 {
-    font-size: 4.8rem;
-  }
-}
-
-h3 {
-  font-size: 2rem;
-  font-weight: 500;
-  line-height: 1.25em;
-}
-@media (min-width: 768px) {
-  h3 {
-    font-size: 2rem;
-  }
-}
-@media (min-width: 1024px) {
-  h3 {
-    font-size: 2.4rem;
-  }
-}
-
-.footer {
-  min-height: 20rem;
-  background-color: #172048;
-}
-
-@font-face {
-  font-family: "icomoon";
-  src: url("../../scss/icons-font/fonts/icomoon.eot?9i6q3b");
-  src: url("../../scss/icons-font/fonts/icomoon.eot?9i6q3b#iefix") format("embedded-opentype"), url("../../scss/icons-font/fonts/icomoon.ttf?9i6q3b") format("truetype"), url("../../scss/icons-font/fonts/icomoon.woff?9i6q3b") format("woff"), url("../../scss/icons-font/fonts/icomoon.svg?9i6q3b#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-[class^=icon-]::before,
-[class*=" icon-"]::before {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "icomoon" !important;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-drawing:before {
-  content: "\e900";
-}
-
-.icon-monitor:before {
-  content: "\e901";
-}
-
-.icon-pencil:before {
-  content: "\e903";
-}
-
-.icon-paper:before {
-  content: "\e904";
-}
-
-.icon-check-mark:before {
-  content: "\e905";
-}
-
-.icon-arrow-left:before {
-  content: "\e902";
-}
-
-.icon-arrow-right-up:before {
-  content: "\e906";
-}
-
-.icon-chevron-right:before {
-  content: "\e90d";
-}
-
-.icon-dribbble:before {
-  content: "\e907";
-}
-
-.icon-facebook:before {
-  content: "\e908";
-}
-
-.icon-github:before {
-  content: "\e909";
-}
-
-.icon-twitter:before {
-  content: "\e90a";
-}
-
-.icon-scroll:before {
-  content: "\e90b";
-}
-
-.icon-star:before {
-  content: "\e90c";
-}
-
-.main-container {
-  margin: 0 auto;
-  padding: 0 2.4rem;
-  max-width: 100%;
-}
-@media (min-width: 768px) {
-  .main-container {
-    max-width: 114rem;
   }
 }
 
@@ -1350,56 +1350,6 @@ h3 {
   }
 }
 
-.service-card {
-  background-color: #353F5B;
-  border-radius: 3rem;
-  padding: 4.8rem 3.4rem;
-}
-.service-card__icon {
-  font-size: 5rem;
-  color: #FFC93E;
-  padding-bottom: 3.6rem;
-}
-.service-card__title {
-  font-size: 2rem;
-  padding-bottom: 2rem;
-}
-.service-card__text {
-  font-size: 1.6rem;
-  line-height: 3rem;
-  padding-bottom: 2rem;
-}
-
-.service-slider {
-  position: relative;
-  width: 100%;
-  padding-bottom: 7rem;
-}
-.service-slider .servise-slider__pagination {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 1.5rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.service-slider .servise-slider__pagination .swiper-pagination-bullet {
-  width: 2rem;
-  height: 2rem;
-  font-size: 2rem;
-  background-color: #fff;
-  opacity: 1;
-}
-.service-slider .servise-slider__pagination .swiper-pagination-bullet-active {
-  background-color: #FFC93E;
-}
-@media (min-width: 768px) {
-  .service-slider {
-    display: none;
-  }
-}
-
 .service__cards-container {
   display: none;
 }
@@ -1431,7 +1381,87 @@ h3 {
   }
 }
 
+.service-slider {
+  position: relative;
+  width: 100%;
+  padding-bottom: 7rem;
+}
+@media (min-width: 768px) {
+  .service-slider {
+    display: none;
+  }
+}
+.service-slider .servise-slider__pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.service-slider .servise-slider__pagination .swiper-pagination-bullet {
+  width: 2rem;
+  height: 2rem;
+  font-size: 2rem;
+  background-color: #fff;
+  opacity: 1;
+}
+.service-slider .servise-slider__pagination .swiper-pagination-bullet-active {
+  background-color: #FFC93E;
+}
+
+.service-card {
+  background-color: #353F5B;
+  border-radius: 3rem;
+  padding: 4.8rem 3.4rem;
+}
+.service-card__icon {
+  font-size: 5rem;
+  color: #FFC93E;
+  padding-bottom: 3.6rem;
+}
+.service-card__title {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+.service-card__text {
+  font-size: 1.6rem;
+  line-height: 3rem;
+  padding-bottom: 2rem;
+}
+
 .service {
   padding-top: 5rem;
   padding-bottom: 5rem;
+}
+
+.projects-slider {
+  position: relative;
+  width: 100%;
+  padding-bottom: 7rem;
+}
+@media (min-width: 768px) {
+  .projects-slider {
+    display: none;
+  }
+}
+.projects-slider .projects-slider__pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.projects-slider .projects-slider__pagination .swiper-pagination-bullet {
+  width: 2rem;
+  height: 2rem;
+  font-size: 2rem;
+  background-color: #fff;
+  opacity: 1;
+}
+.projects-slider .projects-slider__pagination .swiper-pagination-bullet-active {
+  background-color: #FFC93E;
 }

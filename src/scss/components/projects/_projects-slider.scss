@@ -1,0 +1,24 @@
+.projects-slider{
+	position: relative;
+	width: 100%;
+	padding-bottom: 7rem;
+	@media (min-width: $point1) {
+		display: none;
+	 }
+
+	.projects-slider__pagination {
+		display: flex;
+		gap: 1.5rem;
+		justify-content: center;
+		.swiper-pagination-bullet {
+			width: 2rem;
+			height: 2rem;
+			font-size: 2rem;
+			background-color: #fff;
+			opacity: 1;
+			&-active {
+				background-color: $color1;
+			}
+		}
+	}
+}
