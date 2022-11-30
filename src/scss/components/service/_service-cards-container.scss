@@ -1,0 +1,30 @@
+.service__cards-container {
+	display: none;
+	@media (min-width: $point1) {
+		display: grid;
+		gap: 3rem;
+		grid-template-columns: 1fr 1fr;
+		padding-bottom: 8rem;
+		.service-card {
+			border-radius: 0;
+		}
+
+		.service-card:nth-child(1) {
+			border-radius: 5rem 0 0 0;
+		}
+
+		.service-card:nth-child(2) {
+			transform: translateY(6rem);
+			border-radius: 0 5rem 0 0;
+		}
+
+		.service-card:nth-child(3) {
+			border-radius: 0 0 0 5rem;
+		}
+
+		.service-card:nth-child(4) {
+			border-radius: 0 0 5rem 0;
+			transform: translateY(6rem);
+		}
+	}
+}

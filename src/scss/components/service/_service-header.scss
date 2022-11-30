@@ -2,8 +2,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.service__title{
-    width: 50%;
     padding-bottom: 3rem;
+
+    .service__title{
+        max-width: 50%;
+        @media (min-width: $point1) {
+            max-width: 30%;;
+         }
+    }
 }
