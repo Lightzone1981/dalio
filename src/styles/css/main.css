@@ -633,7 +633,6 @@ h3 {
 }
 .wrapper {
   position: relative;
-  min-height: 330vh;
   overflow: hidden;
   background: url("../../assets/decor/ornament_sm.png") no-repeat;
 }
@@ -1436,15 +1435,88 @@ h3 {
   padding-bottom: 5rem;
 }
 
+.projects__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.projects__header .projects__title {
+  width: 70%;
+}
+@media (min-width: 768px) {
+  .projects__header .projects__title {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  .projects__header .main-button {
+    display: none;
+  }
+}
+
+.projects__nav-slider {
+  padding: 4rem 0;
+}
+.projects__nav-slider .swiper-wrapper {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.projects__nav-slider .swiper-wrapper .projects__nav-item {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+.projects__nav-slider .swiper-wrapper .projects__nav-item:hover {
+  color: #FFC93E;
+}
+
+.projects__cards-container {
+  display: none;
+}
+@media (min-width: 768px) {
+  .projects__cards-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 3rem;
+    padding-bottom: 4.8rem;
+  }
+}
+.projects__cards-container .projects-card {
+  text-align: left;
+}
+.projects__cards-container .projects-card__img {
+  width: 100%;
+  padding-bottom: 3rem;
+}
+.projects__cards-container .projects-card__title {
+  width: 70%;
+  padding-bottom: 2.5rem;
+}
+.projects__cards-container .projects-card__text {
+  font-size: 1.6rem;
+  line-height: 2em;
+}
+
 .projects-slider {
   position: relative;
-  width: 100%;
   padding-bottom: 7rem;
 }
 @media (min-width: 768px) {
   .projects-slider {
     display: none;
   }
+}
+.projects-slider__img {
+  width: 100%;
 }
 .projects-slider .projects-slider__pagination {
   display: -webkit-box;
@@ -1464,4 +1536,10 @@ h3 {
 }
 .projects-slider .projects-slider__pagination .swiper-pagination-bullet-active {
   background-color: #FFC93E;
+}
+
+.projects {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  text-align: center;
 }

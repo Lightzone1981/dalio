@@ -1,7 +1,6 @@
 @import "./color-shadows";
 .wrapper {
 	position: relative;
-	min-height: 330vh;
 	overflow: hidden;
 	background: url("../../assets/decor/ornament_sm.png") no-repeat;
 	@media (min-width: $point1) {

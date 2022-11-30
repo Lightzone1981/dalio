@@ -1,0 +1,20 @@
+.projects__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	.projects__title {
+		width: 70%;
+
+		@media (min-width: $point1) {
+			width: 100%;
+			text-align: center;
+		}
+	}
+
+	.main-button {
+		@media (min-width: $point1) {
+			display: none;
+		}
+	}
+}

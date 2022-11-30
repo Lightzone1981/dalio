@@ -13,9 +13,14 @@ new Swiper('.projects-slider', {
         el: '.swiper-pagination',
         clickable: true,
     },
-    slidesPreview: 2,
+    slidesPerView: 1,
     spaceBetween: 20,
 }); 
+
+new Swiper('.projects__nav-slider', {
+    
+    slidesPerView: 3.2,
+});
 
 
 const mediaQuery = window.matchMedia('(max-width: 768px)')
