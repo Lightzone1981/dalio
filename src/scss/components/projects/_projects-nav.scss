@@ -1,16 +1,16 @@
-.projects__nav-slider{
-    padding: 4rem 0;
+.projects__nav-slider {
+	padding: 4rem 0;
 
-    .swiper-wrapper{
-        align-items: center;
-		  
-        .projects__nav-item{
-            display: inline-block;
-            text-decoration: none;
-            font-size: 1.6rem;
-				&:hover{
-					color:$color1;
-				}
-        	}
-    }
+	.swiper-wrapper {
+		align-items: center;
+
+		.projects__nav-item {
+			display: inline-block;
+			text-decoration: none;
+			font-size: 1.6rem;
+			&:hover {
+				color: $color1;
+			}
+		}
+	}
 }

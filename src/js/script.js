@@ -23,15 +23,21 @@ new Swiper('.projects__nav-slider', {
 });
 
 
+new Swiper('.reviews-slider', {
+ 
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+    },
+    slidesPerView: 1.1,
+    spaceBetween: 20,
+}); 
+
 const mediaQuery = window.matchMedia('(max-width: 768px)')
 if (mediaQuery.matches) {
 
 }
-
-
-
-
-   // navigation: {
-    //     nextEl: '.swiper-button-next',
-    //     prevEl: '.swiper-button-prev'
-    // },

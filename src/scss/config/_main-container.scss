@@ -1,9 +1,10 @@
-.main-container{
-    margin: 0 auto;
-    padding: 0 2.4rem;
-    max-width: 100%;
-    
-    @media (min-width: $point1) {
-        max-width: 114rem;
-    }
+.main-container {
+	margin: 0 auto;
+	padding: 0 2.4rem;
+	max-width: 100%;
+
+	@media (min-width: $point1) {
+		max-width: 120rem;
+		padding: 0 1.5rem;
+	}
 }
