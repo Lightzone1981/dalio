@@ -1,0 +1,39 @@
+.sign-up-form{
+    padding: 6rem 4.8rem;
+    background-color: $color1;
+    border-radius: 2rem;
+
+    &__text{
+      color: $color2;
+      font-size: 2rem;
+      padding-bottom: 2rem;
+      text-align: left;
+    }
+
+    .sign-up-form__body{
+        display:flex;
+        .sign-up-form__email{
+            color: $color2;
+            font-size: 1.6rem;
+            padding-bottom: 2rem;
+            background-color: transparent;
+            width: 100%;
+            border: 1px solid $color1;
+            border-bottom-color: #fff;
+        }
+
+        .sign-up-form__button{
+            width: 2rem;
+            height: 1.7rem;
+            background: url("../../assets/icons/chevron-right.svg") center/contain no-repeat;
+            
+            &:hover{
+                cursor: pointer;
+                opacity: 0.5;
+            }
+        }
+    }
+
+
+
+}

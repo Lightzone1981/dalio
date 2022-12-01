@@ -1,4 +1,14 @@
+@import './sign-up-form';
+@import './address-terms';
+@import './social-media';
+
 .footer {
-	min-height: 20rem;
+	padding: 4rem 0;
 	background-color: $color3;
+
+	&__wrapper{
+		display: grid;
+		gap:2rem;
+		text-align: center;
+	}
 }

@@ -1,0 +1,23 @@
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap:3rem;
+
+
+    &__link {
+        text-decoration: none;
+        font-size: 3rem;
+    }
+
+    &__link:hover {
+        color:$color1;
+    }
+}
+.icon-twitter {
+}
+.icon-facebook {
+}
+.icon-dribbble {
+}
+.icon-github {
+}
