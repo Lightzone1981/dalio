@@ -14,7 +14,7 @@
 	}
 
 	.color-shadow-1::after {
-		@include position-style(-40%, 10%, 200rem, 200rem);
+		@include position-style(-15%, 10%, 200rem, 200rem);
 		border-radius: 50%;
 		background: radial-gradient(
 			circle at center,
