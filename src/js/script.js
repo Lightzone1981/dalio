@@ -30,8 +30,8 @@ new Swiper('.reviews-slider', {
         clickable: true,
     },
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev'
+        nextEl: '.review-next',
+        prevEl: '.review-prev'
     },
     slidesPerView: 1.1,
     spaceBetween: 20,

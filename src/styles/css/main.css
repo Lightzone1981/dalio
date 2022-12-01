@@ -1588,7 +1588,6 @@ h3 {
 }
 
 .reviews-slider {
-  position: relative;
   padding-bottom: 7rem;
 }
 @media (min-width: 768px) {
@@ -1596,47 +1595,44 @@ h3 {
     padding-bottom: 0;
   }
 }
+.reviews-slider .review-prev,
+.reviews-slider .review-next {
+  display: none;
+}
+@media (min-width: 768px) {
+  .reviews-slider .review-prev,
+.reviews-slider .review-next {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: -1.5rem;
+    width: 5.8rem;
+    height: 5.8rem;
+    border-radius: 50%;
+    z-index: 10;
+    background: url(../../assets/icons/arrow-left.svg) center no-repeat, #FFC93E;
+  }
+}
+.reviews-slider .review-next {
+  left: -1.5rem;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.reviews-slider .review-prev:hover,
+.reviews-slider .review-next:hover {
+  cursor: pointer;
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
+}
+.reviews-slider .review-prev[aria-disabled=true],
+.reviews-slider .review-next[aria-disabled=true] {
+  display: none;
+}
 @media (min-width: 768px) {
   .reviews-slider .reviews-slider__pagination {
     display: none;
   }
-}
-.reviews-slider__img {
-  width: 100%;
-}
-.reviews-slider .swiper-button-prev,
-.reviews-slider .swiper-button-next {
-  display: none;
-}
-@media (min-width: 768px) {
-  .reviews-slider .swiper-button-prev,
-.reviews-slider .swiper-button-next {
-    display: block;
-  }
-}
-.reviews-slider .swiper-button-prev::after {
-  position: absolute;
-  content: "";
-  left: 65vw;
-  width: 5.6rem;
-  height: 5.6rem;
-  border-radius: 50%;
-  background: url(../../assets/icons/arrow-left.svg) center no-repeat, #FFC93E;
-}
-.reviews-slider .swiper-button-next::after {
-  position: absolute;
-  content: "";
-  right: 65vw;
-  width: 5.6rem;
-  height: 5.6rem;
-  border-radius: 50%;
-  background: url(../../assets/icons/arrow-left.svg) center no-repeat, #FFC93E;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-.reviews-slider .swiper-button-next[aria-disabled=true],
-.reviews-slider .swiper-button-prev[aria-disabled=true] {
-  opacity: 0;
 }
 
 .reviews-card {
@@ -1733,6 +1729,7 @@ h3 {
 }
 
 .reviews {
+  position: relative;
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
