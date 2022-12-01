@@ -1,4 +1,4 @@
-.service-slider{
+.blog-slider{
 	position: relative;
 	width: 100%;
 	padding-bottom: 7rem;
@@ -6,7 +6,7 @@
 		display: none;
 	 }
 
-	.servise-slider__pagination {
+	.blog-slider__pagination {
 		@extend %for-sliders-pagination;
 	}
 }

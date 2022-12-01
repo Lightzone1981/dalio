@@ -3,7 +3,7 @@ new Swiper('.service-slider', {
         el: '.swiper-pagination',
         clickable: true,
     },
-    slidesPreview: 2,
+    slidesPerView: 1,
     spaceBetween: 20,
 }); 
 
@@ -35,6 +35,15 @@ new Swiper('.reviews-slider', {
     },
     slidesPerView: 1.1,
     spaceBetween: 20,
+}); 
+
+new Swiper('.blog-slider', {
+	pagination: {
+		 el: '.swiper-pagination',
+		 clickable: true,
+	},
+	slidesPerView: 1,
+	spaceBetween: 20,
 }); 
 
 const mediaQuery = window.matchMedia('(max-width: 768px)')

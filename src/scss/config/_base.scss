@@ -2,6 +2,7 @@
 @import "../variables/colors";
 @import "../variables/stop-points";
 @import "../mixins/position-style";
+@import "../mixins/sliders-pagination";
 
 html {
 	font-size: 10px;
@@ -44,9 +45,4 @@ h3 {
 	@media (min-width: $point2) {
 		font-size: 2.4rem;
 	}
-}
-
-.footer {
-	min-height: 20rem;
-	background-color: $color2;
 }

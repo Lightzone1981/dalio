@@ -1,64 +1,54 @@
 .reviews-slider {
-	position: relative;
-	padding-bottom: 7rem;
+  position: relative;
+  padding-bottom: 7rem;
+  @media (min-width: $point1) {
+    padding-bottom: 0;
 
-	&__img {
-		width: 100%;
-	}
+  }
 
-	.swiper-button-prev,
-	.swiper-button-next{
-		display: none;
+  .reviews-slider__pagination {
+    @extend %for-sliders-pagination;
 
-		@media (min-width: $point1) {
-			display: block;
-        }
+    @media (min-width: $point1) {
+      display: none;
+    }
+  }
 
-	}
+  &__img {
+    width: 100%;
+  }
 
-	.swiper-button-prev::after{
-		position: absolute;
-		content:'';
-		left:65vw;
-		width: 5.6rem;
-		height: 5.6rem;
-		border-radius: 50%;
-		background: url(../../assets/icons/arrow-left.svg) center no-repeat, $color1;
-	}
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
 
-	.swiper-button-next::after{
-		position: absolute;
-		content:'';
-		right:65vw;
-		width: 5.6rem;
-		height: 5.6rem;
-		border-radius: 50%;
-		background: url(../../assets/icons/arrow-left.svg) center no-repeat, $color1;
-		transform: rotate(180deg);
-	}
-	.swiper-button-next[aria-disabled='true'],
-	.swiper-button-prev[aria-disabled='true']{
-		opacity:0;
-	}
+    @media (min-width: $point1) {
+      display: block;
+    }
+  }
 
-	.reviews-slider__pagination {
-		display: flex;
-		gap: 1.5rem;
-		justify-content: center;
+  .swiper-button-prev::after {
+    position: absolute;
+    content: "";
+    left: 65vw;
+    width: 5.6rem;
+    height: 5.6rem;
+    border-radius: 50%;
+    background: url(../../assets/icons/arrow-left.svg) center no-repeat, $color1;
+  }
 
-        @media (min-width: $point1) {
-            display: none;
-        }
-
-		.swiper-pagination-bullet {
-			width: 2rem;
-			height: 2rem;
-			font-size: 2rem;
-			background-color: #fff;
-			opacity: 1;
-			&-active {
-				background-color: $color1;
-			}
-		}
-	}
+  .swiper-button-next::after {
+    position: absolute;
+    content: "";
+    right: 65vw;
+    width: 5.6rem;
+    height: 5.6rem;
+    border-radius: 50%;
+    background: url(../../assets/icons/arrow-left.svg) center no-repeat, $color1;
+    transform: rotate(180deg);
+  }
+  .swiper-button-next[aria-disabled="true"],
+  .swiper-button-prev[aria-disabled="true"] {
+    opacity: 0;
+  }
 }

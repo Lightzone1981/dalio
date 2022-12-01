@@ -97,3 +97,17 @@
 		}
 	}
 }
+
+.blog-card__type-button{
+	background-color: $color4;
+	color:$color2;
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	font-weight: 500;
+	padding: 0.6em 1em;
+	border-radius: 1.2em;
+	&:hover{
+		cursor: pointer;
+		color:$color1;
+	}
+}
