@@ -6,20 +6,11 @@
 .projects {
 	padding-top: 5rem;
 	padding-bottom: 5rem;
-	.main-button {
+	> .main-button {
 		display: none;
 		@media (min-width: $point1) {
 			display: block;
-			margin: 0 auto; 
+			margin: 0 auto;
 		}
 	}
 }
-
-// .swiper-button-prev::after{
-//     width: 2rem;
-//     height: 2rem;
-//     left:0;
-//     background-color: $color1;
-//     border-radius: 50%;
-//     color:rgb(158, 9, 9)
-// }

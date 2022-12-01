@@ -2,9 +2,6 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	@media (min-width: $point1) {
-		justify-content: center;
-	}
 
 	.projects__title {
 		width: 70%;
@@ -15,8 +12,9 @@
 		}
 	}
 
-	.main-button {
+	.project-button {
 		flex-shrink: 0;
+		display: block;
 		@media (min-width: $point1) {
 			display: none;
 		}

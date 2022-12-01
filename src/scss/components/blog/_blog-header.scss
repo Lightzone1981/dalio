@@ -12,6 +12,7 @@
     }
     .main-button {
 		flex-shrink: 0;
+        display: block;
 		@media (min-width: $point1) {
 			display: none;
 		}

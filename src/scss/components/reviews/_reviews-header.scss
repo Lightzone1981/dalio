@@ -17,8 +17,8 @@
 
 	.main-button {
 		flex-shrink: 0;
-		@media (min-width: $point1) {
-			display: none;
-		}
+		// @media (min-width: $point1) {
+		// 	display: none;
+		// }
 	}
 }

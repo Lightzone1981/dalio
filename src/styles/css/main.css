@@ -1456,13 +1456,6 @@ h3 {
       -ms-flex-align: center;
           align-items: center;
 }
-@media (min-width: 768px) {
-  .projects__header {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
 .projects__header .projects__title {
   width: 70%;
 }
@@ -1472,12 +1465,13 @@ h3 {
     text-align: center;
   }
 }
-.projects__header .main-button {
+.projects__header .project-button {
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  display: block;
 }
 @media (min-width: 768px) {
-  .projects__header .main-button {
+  .projects__header .project-button {
     display: none;
   }
 }
@@ -1540,11 +1534,11 @@ h3 {
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
-.projects .main-button {
+.projects > .main-button {
   display: none;
 }
 @media (min-width: 768px) {
-  .projects .main-button {
+  .projects > .main-button {
     display: block;
     margin: 0 auto;
   }
@@ -1580,11 +1574,6 @@ h3 {
 .reviews__header .main-button {
   -ms-flex-negative: 0;
       flex-shrink: 0;
-}
-@media (min-width: 768px) {
-  .reviews__header .main-button {
-    display: none;
-  }
 }
 
 .reviews-slider {
@@ -1762,6 +1751,7 @@ h3 {
 .blog__header .main-button {
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  display: block;
 }
 @media (min-width: 768px) {
   .blog__header .main-button {
