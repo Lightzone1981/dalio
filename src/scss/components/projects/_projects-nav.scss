@@ -18,7 +18,9 @@
 				color: $color1;
 			}
 			&:last-child {
-				text-align: right;
+				@media (min-width: $point1) {
+					text-align: right;
+				}
 			}
 		}
 	}

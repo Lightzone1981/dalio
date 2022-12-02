@@ -801,7 +801,7 @@ h3 {
   top: 45%;
 }
 .header__burger .header__burger-checkbox:checked ~ .header__burger-pseudo::before {
-  opacity: 0;
+  height: 0;
 }
 .header__burger .header__burger-label {
   position: absolute;
@@ -1633,8 +1633,10 @@ h3 {
 .projects__nav-slider .swiper-wrapper .projects__nav-item:hover {
   color: #FFC93E;
 }
-.projects__nav-slider .swiper-wrapper .projects__nav-item:last-child {
-  text-align: right;
+@media (min-width: 768px) {
+  .projects__nav-slider .swiper-wrapper .projects__nav-item:last-child {
+    text-align: right;
+  }
 }
 
 .projects__cards-container {
