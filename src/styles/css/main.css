@@ -661,6 +661,66 @@ h3 {
     background: radial-gradient(circle at center, #2c303e 0%, transparent 30%, transparent 100%);
   }
 }
+@-webkit-keyframes shadow1 {
+  50% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+}
+@keyframes shadow1 {
+  50% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+}
+@-webkit-keyframes shadow2 {
+  50% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+}
+@keyframes shadow2 {
+  50% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+}
+.color-shadow-1::before {
+  -webkit-animation-name: shadow1;
+          animation-name: shadow1;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.color-shadow-1::after {
+  -webkit-animation-name: shadow2;
+          animation-name: shadow2;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.color-shadow-2::before {
+  -webkit-animation-name: shadow1;
+          animation-name: shadow1;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.color-shadow-2::after {
+  -webkit-animation-name: shadow2;
+          animation-name: shadow2;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
 .wrapper {
   position: relative;
   overflow: hidden;

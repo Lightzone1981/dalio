@@ -1,0 +1,35 @@
+@keyframes shadow1{
+    50%{
+        transform: scale(2);
+    }
+}
+
+@keyframes shadow2{
+    50%{
+        transform: scale(0.5);
+    }
+}
+
+.color-shadow-1::before{
+    animation-name: shadow1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.color-shadow-1::after{
+    animation-name: shadow2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.color-shadow-2::before{
+    animation-name: shadow1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.color-shadow-2::after{
+    animation-name: shadow2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
