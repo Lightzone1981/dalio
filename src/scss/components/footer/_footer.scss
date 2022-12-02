@@ -7,8 +7,18 @@
 	background-color: $color3;
 
 	&__wrapper{
-		display: grid;
-		gap:2rem;
+		display: flex;
+		flex-direction: column;
+		gap:3rem;
 		text-align: center;
+		@media (min-width: $point1) {
+			display: grid;
+			grid-template-areas: 
+			's1 s2 s3'
+			's4 s5 s6'
+			;
+			align-items: center;
+
+		}
 	}
 }

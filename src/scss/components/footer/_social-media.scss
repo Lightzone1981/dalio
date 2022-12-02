@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     gap:3rem;
+    grid-area: s6;
 
 
     &__link {
@@ -12,12 +13,4 @@
     &__link:hover {
         color:$color1;
     }
-}
-.icon-twitter {
-}
-.icon-facebook {
-}
-.icon-dribbble {
-}
-.icon-github {
 }

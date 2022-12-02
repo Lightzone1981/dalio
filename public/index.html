@@ -17,10 +17,10 @@
 		<img class="header__logo" src="../src/assets/logo/Dalio.svg" alt="Dalio logo" >
 		<nav class="header__nav">
 			<a class="header__nav-item" href="#about">About us</a>
-			<a class="header__nav-item" href="#">What We do</a>
-			<a class="header__nav-item" href="#">Our work </a>
-			<a class="header__nav-item" href="#">Blog</a>
-			<a class="header__nav-item" href="#">Say hi</a>
+			<a class="header__nav-item" href="#service">What We do</a>
+			<a class="header__nav-item" href="#projects">Our work </a>
+			<a class="header__nav-item" href="#blog">Blog</a>
+			<a class="header__nav-item" href="#footer">Say hi</a>
 		</nav>
 		<div class="header__burger">
 			<input class="header__burger-checkbox" type="checkbox" id="burger-checkbox">
@@ -58,7 +58,7 @@
 				<button class="scroll-button">Scroll Down</button>
 			</article>
 			<article class="about" id="about">
-				<section class="agency main-container">
+				<div class="agency main-container">
 					<div class="agency__container">
 						<h2 class="agency__title">
 							We are a creative digital agency
@@ -82,7 +82,7 @@
 					<figure class="collage">
 						<img class="collage__img" src="../src/assets/collage/collage_about.png" alt="" >
 					</figure>
-				</section>
+				</div>
 				<aside class="statistics-bar main-container">
 					<ul class="statistics-bar__container">
 						<li class="statistics-bar__item">
@@ -140,7 +140,7 @@
 					</ul>
 				</div>
 			</article>
-			<article class='service main-container'>
+			<article class='service main-container' id="service">
 				<header class="service__header">
 					<h2 class="service__title">
 						Service We Can Help You
@@ -258,7 +258,7 @@
 				</section>
 			</article>
 
-			<article class="projects main-container">
+			<article class="projects main-container" id="projects">
 				<header class="projects__header">
 					<h2 class="projects__title">
 						Our Latest Projects
@@ -277,20 +277,20 @@
 						<a class="swiper-slide projects__nav-item" href="#">Interaction</a>
 					</div>
 				</nav>
-				<section class="projects-slider swiper-container">
+				<div class="projects-slider swiper-container">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
 								<img class="projects-slider__img" src="../src/assets/project-slider/project-slide_1--sm.png" alt="Web Design Layouts" >
 						</div>
 						<div class="swiper-slide">
-								<img class="projects-slider__img"  src="../src/assets/project-slider/project-slide_2--sm.png" alt="Web Design Layouts" alt="" >
+								<img class="projects-slider__img"  src="../src/assets/project-slider/project-slide_2--sm.png" alt="Web Design Layouts">
 						</div>
 						<div class="swiper-slide">
-								<img class="projects-slider__img"  src="../src/assets/project-slider/project-slide_3--sm.png" alt="Web Design Layouts" alt="" >
+								<img class="projects-slider__img"  src="../src/assets/project-slider/project-slide_3--sm.png" alt="Web Design Layouts">
 						</div>
 					</div>
 					<div class="projects-slider__pagination swiper-pagination"></div>
-				</section>
+				</div>
 				<section class="projects__cards-container">
 					<div class="projects-card">
 						<img class="projects-card__img" src="../src/assets/project-slider/project-slide_1.png" alt="Web Design Layouts" >
@@ -301,7 +301,7 @@
 						</p>
 					</div>
 					<div class="projects-card">
-						<img class="projects-card__img"  src="../src/assets/project-slider/project-slide_2.png" alt="Web Design Layouts" alt="" >
+						<img class="projects-card__img"  src="../src/assets/project-slider/project-slide_2.png" alt="Web Design Layouts">
 						<h3 class="projects-card__title">Bonfire - Landing Page Design Webby Awards Nomination</h3>
 						<p class="projects-card__text">
 							Pretty excited to announce that we just got nominated at the Webby Awards! easy to understand and to use should be essential for every business owner who uses their website.
@@ -324,7 +324,7 @@
 						<span class="main-button__icon icon-arrow-right-up"></span>
 					</button>
 				</header>
-				<section class="reviews-slider swiper-container">
+				<div class="reviews-slider swiper-container">
 					<div class="reviews-slider__wrapper  swiper-wrapper">
 						<div class="swiper-slide">
 							<div class="reviews-card">
@@ -333,7 +333,7 @@
 								</p>
 								<div class="reviews-card__client-container">
 									<div class="reviews-card__client-data">
-										<img class="reviews-card__client-img" src="../src/assets/reviews-slider/Brooklyn Simmons.png" alt="client photo">
+										<img class="reviews-card__client-img" src="../src/assets/reviews-slider/Brooklyn_Simmons.png" alt="client photo">
 											<div class="reviews-card__client">
 												<p class="reviews-card__client-name">Brooklyn Simmons</p>
 												<p class="reviews-card__client-job">Pendron.Inc, CEO</p>
@@ -399,10 +399,10 @@
 					<div class="review-prev"></div>
 					<div class="review-next"></div>
 					<div class="reviews-slider__pagination swiper-pagination"></div>
-				</section>
+				</div>
 			</article>
 
-			<article class='blog main-container'>
+			<article class='blog main-container' id="blog">
 				<header class="blog__header">
 					<h2 class="blog__title">
 						Blog from insights
@@ -505,17 +505,15 @@
 				</section>
 			</article>
 
-		
-
 		</main>
 	</div>	
-	<footer class="footer">
+	<footer class="footer" id="footer">
 		<div class="footer__wrapper  main-container">
 			<form class="sign-up-form" action="#"  id="form">
 				<h3 class="sign-up-form__text">Sign Up to Receive Product Updates and More</h3>
 				<div class='sign-up-form__body'>
-					<input class="sign-up-form__email" name='sign-up-form-email' type="email" placeholder="youremail@gmail.com"	required />
-					<input class="sign-up-form__button icon-chevron-right" name='sign-up-form-button' type="submit" value="" />
+					<input class="sign-up-form__email" name='sign-up-form-email' type="email" placeholder="youremail@gmail.com"	required>
+					<input class="sign-up-form__button icon-chevron-right" name='sign-up-form-button' type="submit" value="">
 				</div>
 			</form>
 			<div class="address">

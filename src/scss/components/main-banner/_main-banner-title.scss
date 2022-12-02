@@ -1,0 +1,51 @@
+.main-banner__title {
+	position: relative;
+	left: 0.5em;
+	display: inline-block;
+	margin: 0.7em 0 0.2em 0;
+	font-weight: bold;
+	font-size: 17vw;
+
+	@media (min-width: $point1) {
+		font-size: 10vw;
+		left: 0;
+	}
+
+	&::before {
+		@include position-style(-0.3em, -1.4em, 2em, 2em);
+		background: url("../../assets/decor/world_class.svg") center/contain
+			no-repeat;
+	}
+
+	&::after {
+		@include position-style(0.1em, -2.65em, 8em, 6em);
+		background: url("../../assets/decor/line-sm.svg") center/contain no-repeat;
+		@media (min-width: $point1) {
+			@include position-style(0.1em, -0.94em, 10em, 5em);
+			background: url("../../assets/decor/line-lg.svg") center/contain no-repeat;
+		}
+	}
+}
+
+.main-banner__title2 {
+	position: relative;
+	left: -0.7em;
+
+	&::before {
+		@include position-style(-1.7em, 3.6em, 0.4em, 0.4em);
+		background: url("../../assets/decor/star_bgr.svg") center/contain no-repeat;
+
+		@media (min-width: $point2) {
+			top: -1.7em;
+			left: 5em;
+		}
+	}
+	&::after {
+		@include position-style(3.2em, 3.3em, 0.4em, 0.4em);
+		background: url("../../assets/decor/star_bgr.svg") center/contain no-repeat;
+
+		@media (min-width: $point1) {
+			@include position-style(-0.8em, -0.7em, 0.4em, 0.4em);
+		}
+	}
+}

@@ -18,8 +18,13 @@ new Swiper('.projects-slider', {
 }); 
 
 new Swiper('.projects__nav-slider', {
-    
     slidesPerView: 3.2,
+    
+    breakpoints: {
+        768: {
+             slidesPerView: 5,
+        }
+    }
 });
 
 
