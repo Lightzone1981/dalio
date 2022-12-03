@@ -801,13 +801,64 @@ h3 {
   top: 45%;
 }
 .header__burger .header__burger-checkbox:checked ~ .header__burger-pseudo::before {
+  opacity: 0;
+}
+.header__burger .header__burger-checkbox:checked ~ .header__burger-menu {
+  height: 110vh;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+@media (min-width: 768px) {
+  .header__burger .header__burger-checkbox:checked ~ .header__burger-menu {
+    height: 45rem;
+  }
+}
+.header__burger .header__burger-menu {
+  position: absolute;
+  z-index: 10;
+  top: -2.3rem;
+  right: -5.5rem;
+  width: 110vw;
   height: 0;
+  background-color: #353F5B;
+  opacity: 0.95;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+@media (min-width: 768px) {
+  .header__burger .header__burger-menu {
+    width: 35rem;
+    border-radius: 0 0 3rem 3rem;
+  }
+}
+.header__burger .header__burger-menu .header__burger-menu-item {
+  font-size: 2rem;
+  padding: 2rem 6rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.header__burger .header__burger-menu .header__burger-menu-item:first-child {
+  padding-top: 8rem;
+}
+.header__burger .header__burger-menu .header__burger-menu-item:hover {
+  color: #FFC93E;
 }
 .header__burger .header__burger-label {
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 10;
+  z-index: 20;
 }
 .header__burger .header__burger-label::before, .header__burger .header__burger-label::after {
   top: 70%;
