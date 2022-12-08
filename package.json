@@ -2,8 +2,11 @@
   "devDependencies": {
     "parcel": "^2.8.0"
   },
-"scripts": {
-  "dev": "parcel ./public/index.html --open",
-  "build": "parcel build .public/index.html"
-}
+  "scripts": {
+    "dev": "parcel ./public/index.html --open",
+    "build": "parcel build .public/index.html"
+  },
+  "dependencies": {
+    "swiper": "^8.4.5"
+  }
 }

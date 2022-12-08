@@ -1,0 +1,14 @@
+@import "./main-banner-title";
+@import "./main-banner-content";
+@import "./main-banner-figure-big";
+@import "./main-banner-figure-small";
+@import "./main-banner-animation";
+
+.main-banner {
+	text-align: center;
+	padding-bottom: 15vw;
+
+	@media (min-width: $point1) {
+		padding-bottom: 25vw;
+	}
+}

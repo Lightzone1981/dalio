@@ -1,0 +1,139 @@
+.approach-container {
+	margin: 0 auto;
+	padding: 5rem 2rem;
+	width: 100vw;
+	background: linear-gradient(
+		to top,
+		#ffc93e 0%,
+		#ffc93e 35%,
+		transparent 35%,
+		transparent 100%
+	);
+
+	@media (min-width: $point1) {
+		padding: 10rem 2.4rem;
+
+		background: linear-gradient(
+			left,
+			#ffc93e 0%,
+			#ffc93e 35%,
+			#353f5b 35%,
+			#353f5b 100%
+		);
+	}
+}
+
+.approach {
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 10rem;
+	@media (min-width: $point1) {
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.approach__figure {
+		position: relative;
+		z-index: 2;
+		order: 1;
+		width: 90%;
+		align-self: center;
+		@media (min-width: $point1) {
+			order: 0;
+			width: 45%;
+		}
+		.approach__figure-container {
+			&::before {
+				@include position-style(80%, 0, 30%, 30%);
+				background: url("../../assets/decor/dots-corner_bgr.svg") center/contain
+					no-repeat;
+
+				@media (min-width: $point1) {
+					top: 77%;
+					left: -12%;
+				}
+			}
+
+			&::after {
+				@include position-style(5%, 85%, 30%, 30%);
+				background: url("../../assets/decor/circle_bg.png") center/contain
+					no-repeat;
+				z-index: -1;
+
+				@media (min-width: $point1) {
+					@include position-style(-10%, 80%, 25%, 25%);
+				}
+			}
+
+			.approach__figure-img {
+				width: 100%;
+			}
+		}
+	}
+
+	.approach__content {
+		width: 90%;
+		@media (min-width: $point1) {
+			order: 0;
+			width: 45%;
+			padding-left: 4rem;
+		}
+
+		.approach__title {
+			padding-bottom: 1em;
+
+			@media (min-width: $point1) {
+				padding-bottom: 0.5em;
+			}
+			@media (min-width: $point2) {
+				padding-bottom: 1em;
+			}
+		}
+
+		.approach__list {
+			list-style-type: none;
+			padding-left: 4rem;
+
+			.approach__item {
+				position: relative;
+
+				.approach__item-title {
+					padding-bottom: 1em;
+					@media (min-width: $point1) {
+						padding-bottom: 0.5em;
+					}
+					@media (min-width: $point2) {
+						padding-bottom: 1em;
+					}
+
+					&::before {
+						position: absolute;
+						top: 0.15em;
+						left: -2em;
+						color: $color1;
+
+						@media (min-width: $point1) {
+							color: #fff;
+						}
+					}
+				}
+
+				&-content {
+					font-size: 1.6rem;
+					font-weight: 400;
+					line-height: 2em;
+					padding-bottom: 2.8em;
+					@media (min-width: $point1) {
+						line-height: 1.5em;
+						padding-bottom: 2em;
+					}
+					@media (min-width: $point2) {
+						line-height: 2em;
+						padding-bottom: 2.8em;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,14 @@
+@import "./reviews-header";
+@import "./reviews-slider";
+@import "./reviews-card";
+
+.reviews {
+	position: relative;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	.main-button {
+		@media (min-width: $point1) {
+		    display: none;
+		}
+	}
+}

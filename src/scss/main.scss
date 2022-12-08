@@ -1,3 +1,15 @@
-body{
-	color:rgb(77, 34, 184);
-}
+@import "./icons-font/icons-font";
+@import "./config/reset";
+@import "./config/normalize";
+@import "./config/base";
+@import "./config/main-container";
+@import "./components/buttons/buttons";
+@import "./components/background/wrapper";
+@import "./components/header/header";
+@import "./components/main-banner/main-banner";
+@import "./components/about/about";
+@import "./components/service/service";
+@import "./components/projects/projects";
+@import "./components/reviews/reviews";
+@import "./components/blog/blog";
+@import "./components/footer/footer";

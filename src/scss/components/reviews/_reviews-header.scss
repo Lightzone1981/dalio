@@ -1,0 +1,24 @@
+.reviews__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    padding-bottom: 3rem;
+	@media (min-width: $point1) {
+		justify-content: center;
+	}
+
+	.reviews__title {
+		width: 70%;
+
+		@media (min-width: $point1) {
+			width: 100%;
+		}
+	}
+
+	.main-button {
+		flex-shrink: 0;
+		// @media (min-width: $point1) {
+		// 	display: none;
+		// }
+	}
+}

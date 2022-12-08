@@ -1,0 +1,22 @@
+.projects__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	.projects__title {
+		width: 70%;
+
+		@media (min-width: $point1) {
+			width: 100%;
+			text-align: center;
+		}
+	}
+
+	.project-button {
+		flex-shrink: 0;
+		display: block;
+		@media (min-width: $point1) {
+			display: none;
+		}
+	}
+}

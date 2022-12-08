@@ -1,0 +1,9 @@
+.blog__cards-container {
+	display: none;
+	@media (min-width: $point1) {
+		display: flex;
+		justify-content: center;
+		gap: 3rem;
+				
+	}
+}

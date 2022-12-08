@@ -1,0 +1,20 @@
+.blog__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 3rem;
+
+    .blog__title{
+        max-width: 50%;
+        @media (min-width: $point1) {
+            max-width: 100%;;
+         }
+    }
+    .main-button {
+		flex-shrink: 0;
+        display: block;
+		@media (min-width: $point1) {
+			display: none;
+		}
+	}
+}

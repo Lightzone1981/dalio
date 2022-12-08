@@ -1,0 +1,11 @@
+@import "./color-shadows";
+@import "./shadows-animation";
+
+.wrapper {
+	position: relative;
+	overflow: hidden;
+	background: url("../../assets/decor/ornament_sm.png") no-repeat;
+	@media (min-width: $point1) {
+		background: url("../../assets/decor/ornament_lg.png") no-repeat;
+	}
+}

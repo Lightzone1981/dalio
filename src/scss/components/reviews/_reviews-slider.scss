@@ -1,0 +1,47 @@
+.reviews-slider {
+	padding-bottom: 7rem;
+	@media (min-width: $point1) {
+		padding-bottom: 0;
+	}
+
+	.review-prev,
+	.review-next {
+		display: none;
+		@media (min-width: $point1) {
+			display: block;
+			position: absolute;
+			content: "";
+			top: 50%;
+			right: -1.5rem;
+			width: 5.8rem;
+			height: 5.8rem;
+			border-radius: 50%;
+			z-index: 10;
+			background: url(../../assets/icons/arrow-left.svg) center no-repeat,
+			$color1;
+		}
+	}
+
+	.review-next {
+		left: -1.5rem;
+		transform: rotate(180deg);
+	}
+
+  .review-prev:hover,
+	.review-next:hover {
+		cursor: pointer;
+    filter: brightness(0.7);
+	}
+	.review-prev[aria-disabled="true"],
+	.review-next[aria-disabled="true"] {
+		display: none
+	}
+
+	.reviews-slider__pagination {
+		@extend %for-sliders-pagination;
+
+		@media (min-width: $point1) {
+			display: none;
+		}
+	}
+}

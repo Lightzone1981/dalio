@@ -1,0 +1,44 @@
+.main-banner__figure-big {
+	position: relative;
+	margin: 3rem auto;
+	display: inline-block;
+
+	@media (min-width: $point1) {
+		position: absolute;
+		top: 23vw;
+		right: 7%;
+	}
+
+	.main-banner__img-big {
+		width: 85vw;
+		@media (min-width: $point1) {
+			width: 30vw;
+		}
+	}
+
+	.main-banner__play-video {
+		position: absolute;
+		right: 15%;
+		bottom: -13%;
+		width: 25vw;
+		height: 25vw;
+		border-radius: 50%;
+		background: url(../../assets/buttons/play_video.svg) center/contain
+				no-repeat,
+			linear-gradient(to bottom, #f0e9cd 7%, #939498 100%);
+		transition: 0.3s;
+
+		@media (min-width: $point1) {
+			width: 10vw;
+			height: 10vw;
+			bottom: -15%;
+		}
+
+		&:hover {
+			cursor: pointer;
+			transform: scale(1.1);
+			transition: 0.3s;
+			filter: brightness(1.1);
+		}
+	}
+}

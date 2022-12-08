@@ -1,0 +1,16 @@
+@import "./projects-header";
+@import "./projects-nav";
+@import "./projects-cards";
+@import "./projects-slider";
+
+.projects {
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	> .main-button {
+		display: none;
+		@media (min-width: $point1) {
+			display: block;
+			margin: 0 auto;
+		}
+	}
+}

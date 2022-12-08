@@ -1,0 +1,27 @@
+.projects__nav-slider {
+	padding: 4rem 0;
+
+	@media (min-width: $point1) {
+		width: 70%;
+		margin: 0 auto;
+	}
+
+	.swiper-wrapper {
+		align-items: center;
+
+		.projects__nav-item {
+			display: inline-block;
+			text-decoration: none;
+			font-size: 1.6rem;
+
+			&:hover {
+				color: $color1;
+			}
+			&:last-child {
+				@media (min-width: $point1) {
+					text-align: right;
+				}
+			}
+		}
+	}
+}

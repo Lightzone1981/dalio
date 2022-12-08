@@ -1,0 +1,12 @@
+.blog-slider{
+	position: relative;
+	width: 100%;
+	padding-bottom: 7rem;
+	@media (min-width: $point1) {
+		display: none;
+	 }
+
+	.blog-slider__pagination {
+		@extend %for-sliders-pagination;
+	}
+}

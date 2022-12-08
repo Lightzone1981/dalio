@@ -1,0 +1,16 @@
+.projects-slider {
+	position: relative;
+	padding-bottom: 7rem;
+
+	@media (min-width: $point1) {
+		display: none;
+	}
+
+	&__img {
+		width: 100%;
+	}
+
+	.projects-slider__pagination {
+		@extend %for-sliders-pagination;
+	}
+}

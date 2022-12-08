@@ -1,0 +1,9 @@
+@import "./header-logo";
+@import "./header-nav";
+@import "./header-burger";
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 2rem;
+}
