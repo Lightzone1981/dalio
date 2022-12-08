@@ -1375,8 +1375,8 @@ h3 {
   margin: 0 auto;
   padding: 5rem 2rem;
   width: 100vw;
-  background: -webkit-gradient(linear, left bottom, left top, from(#ffc93e), color-stop(35%, #ffc93e), color-stop(35%, transparent), to(transparent));
-  background: linear-gradient(to top, #ffc93e 0%, #ffc93e 35%, transparent 35%, transparent 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#ffc93e), color-stop(20%, #ffc93e), color-stop(20%, transparent), to(transparent));
+  background: linear-gradient(to top, #ffc93e 0%, #ffc93e 20%, transparent 20%, transparent 100%);
 }
 @media (min-width: 768px) {
   .approach-container {
