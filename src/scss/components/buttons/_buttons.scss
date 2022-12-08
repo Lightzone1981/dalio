@@ -1,11 +1,12 @@
 .main-button {
 	background-color: $color1;
 	color: $color2;
+	outline: 1px solid $color1;
 	font-size: 1.8rem;
 	font-weight: 500;
 	padding: 0.8em 2em;
 	border-radius: 1.9em;
-	transition: 0.1s;
+	transition: 0.2s;
 	.main-button__icon {
 		color: $color2;
 	}
@@ -15,7 +16,7 @@
 		color: $color1;
 		background-color: transparent;
 		outline: 1px solid $color1;
-		transition: 0.1s;
+		transition: 0.2s;
 
 		.main-button__icon {
 			color: $color1;
@@ -40,7 +41,6 @@
 }
 
 .main-button--white {
-	font-weight: 400;
 	background-color: transparent;
 	color: #fff;
 	outline: 1px solid #fff;
@@ -48,8 +48,7 @@
 		color: #fff;
 	}
 	&:hover {
-		font-weight: 500;
-		outline: none;
+		outline-color: $color1;
 		background-color: $color1;
 		color: $color2;
 		.main-button__icon {

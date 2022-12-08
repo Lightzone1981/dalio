@@ -496,12 +496,13 @@ h3 {
 .main-button {
   background-color: #FFC93E;
   color: #172048;
+  outline: 1px solid #FFC93E;
   font-size: 1.8rem;
   font-weight: 500;
   padding: 0.8em 2em;
   border-radius: 1.9em;
-  -webkit-transition: 0.1s;
-  transition: 0.1s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 .main-button .main-button__icon {
   color: #172048;
@@ -511,8 +512,8 @@ h3 {
   color: #FFC93E;
   background-color: transparent;
   outline: 1px solid #FFC93E;
-  -webkit-transition: 0.1s;
-  transition: 0.1s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 .main-button:hover .main-button__icon {
   color: #FFC93E;
@@ -532,7 +533,6 @@ h3 {
 }
 
 .main-button--white {
-  font-weight: 400;
   background-color: transparent;
   color: #fff;
   outline: 1px solid #fff;
@@ -541,8 +541,7 @@ h3 {
   color: #fff;
 }
 .main-button--white:hover {
-  font-weight: 500;
-  outline: none;
+  outline-color: #FFC93E;
   background-color: #FFC93E;
   color: #172048;
 }
