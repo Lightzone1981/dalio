@@ -434,6 +434,10 @@ html {
   color: #fff;
 }
 
+a {
+  color: #fff;
+}
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;
